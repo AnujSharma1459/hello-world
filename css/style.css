@@ -1,0 +1,173 @@
+
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0px auto;
+    background-color: #222;
+}
+.contents {
+    display: flex;
+    display: -webkit-flex;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 320px;
+}
+.content-padding {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.content_text {
+    font-weight: bold;
+    font-size: 5em;
+    color: #fff;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}
+.buttonFooter {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: rgba(39, 119, 217, 1);
+    text-align: center;
+    display: table;
+}
+.buttonFooterText {
+    color: #ffffff;
+    font-size: 1.3em;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+#txtItem,
+#txtPrice {
+    width: 75%;
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #44B316;
+    /*  background-color: rgba(184, 184, 184, 1); */
+}
+.txtID,
+.txtName,
+.txtAge,
+.txtEmail {
+    width: 94%;
+    border: darkgrey;
+    /* background: gray; */
+    margin-left: 2%;
+    border-radius: 14px;
+}
+.lblID,
+.lblName,
+.lblAge,
+.lblEmail {
+    margin-left: 2%;
+}
+.ui-header.ui-titlee {
+    color: rgba(116, 196, 252, 1);
+    font-size: 32px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px;
+    padding-left: 56px;
+    padding-right: 22px;
+    -webkit-mask-image: -webkit-linear-gradient(left, #000 80%, rgba(0, 0, 0, 0) 95%);
+}
+.ui-button {
+    display: block;
+    padding-top: 4.5px;
+    padding-right: 10px;
+    padding-bottom: 11.5px;
+    padding-left: 10px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: 0 none;
+    color: rgba(245, 245, 245, 1);
+    background-color: rgb(43, 46, 48);
+    /* border-radius: 21px; */
+}
+.headerDetails {
+    font-size: 31px;
+    background-color: rgb(123, 120, 122);
+}
+.btnDetails {
+    width: 74px;
+    height: 29px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+}
+.idDetail,
+.ageDetail {
+    background-color: rgb(69, 71, 72);
+}
+.nameDetail,
+.emailDetail {
+    background-color: rgb(52, 55, 60);
+}
+/* .ui-cusheader {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(51, 40, 30, 1);
+} */
+
+/* .ui-cusTitle
+{
+  background-color:rgb(249, 247, 255);
+  font-size: 32px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-mask-image: -webkit-linear-gradient(left, #000000 80%, rgba(0, 0, 0, 0) 95%);
+	
+} */
+.ui-addbutton {
+  display: block;
+  padding-top: 28.5px;
+  padding-right: 10px;
+  padding-bottom: 28.5px;
+  padding-left: 10px;
+  margin: 0px;`
+  font-size: 32px;
+  line-height: 28px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: 0 none;
+  color: rgba(245, 245, 245, 1);
+  background-color: rgb(43, 46, 48);
+}
+    .checkboxtable
+    {
+    width:100%;
+    }
+    .checkboxtable td
+    {
+    width:20%;
+    }
+    .checkboxtable #td2
+    {
+    width:80%;
+    }
+

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title>Circular UI</title>
+<link rel="stylesheet" href="lib/tau/wearable/theme/blue/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/thumbnail.css">
+       
+</head>
+<body>
+
+<!-- Menu_Start -->
+	<div class="ui-page" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Data Bank</h2>
+		</header>
+		<div class="ui-content content-padding">
+
+			<div class="ui-btn">
+				<a href="#addrecordpage">Add record</a>
+			</div>
+			<div class="ui-btn" id=read>
+				<div id="readsub">Read</div>
+			</div>
+			<div class="ui-btn">
+				<div id="add">add</div>
+			</div>
+			<div class="ui-btn">
+				<div id="readall">readall</div>
+			</div>
+			<div class="ui-btn">
+				<div id="remove">remove</div>
+			</div>
+			<div class="ui-btn">
+				<div id="Back">Back</div>
+			</div>
+
+			<div class="ui-btn">
+				<a href="#sectionChangerPage">thumbnail</a>
+			</div>
+            
+			<div class="ui-btn">
+				<a href="#notification">Notification</a>
+			</div>
+			
+			<div class="ui-btn">
+				<a href="#marqueeTest">Marquee</a>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Menu_End -->
+	<!--UpdateRecord_Start-->
+	<div class="ui-page " id="updaterecordpage">
+		<header class="ui-header">
+			<h1 class="ui-title">Add Record</h1>
+		</header>
+
+		<div class="ui-contents">
+			<table>
+				<tr>
+					<!-- <td>
+						<p class="lblID">ID</p>
+					</td>
+
+					<td><input type="text" id="txtID" n class="txtID"></td> -->
+				<tr>
+
+					<p class="lblName">
+						Name <input type="text" id="uptName" class="txtName">
+					</p>
+					<p class="lblAge">
+						Age <input type="text" id="uptAge" class="txtAge">
+					</p>
+					<p class="lblEmail">
+						Email <input type="text" id="uptEmail" class="txtEmail">
+					</p>
+			</table>
+		</div>
+		<!-- scroll-able footer -->
+		<div id="btnUpdate" class="ui-button  footer">
+			<div id="btnTextSubmit" class="ui-button ">Update</div>
+		</div>
+
+	</div>
+	<!--UpdateRecord_End-->
+<!--AddRecord_Start-->
+	<div class="ui-page " id="addrecordpage">
+		<header class="ui-header">
+			<h1 class="ui-title">Add Record</h1>
+		</header>
+
+		<div class="ui-contents">
+			<table>
+				<tr>
+					<!-- <td>
+						<p class="lblID">ID</p>
+					</td>
+
+					<td><input type="text" id="txtID" n class="txtID"></td> -->
+				<tr>
+
+					<p class="lblName">
+						Name <input type="text" id="txtName" class="txtName">
+					</p>
+					<p class="lblAge">
+						Age <input type="text" id="txtAge" class="txtAge">
+					</p>
+					<p class="lblEmail">
+						Email <input type="text" id="txtEmail" class="txtEmail">
+					</p>
+			</table>
+		</div>
+
+		<!-- Single Button 
+		<div id="btnSubmit" class="ui-button ">
+			<div id="btnTextSubmit" class="ui-button ">Submit</div>
+		</div> -->
+		<!-- fixed footer -->
+		<div id="month-footer" class="ui-footer ui-grid-col-2 ">
+			<a href="#" class="ui-addbutton ui-btn-footer-icon btn-icon-left"
+				id="btnSubmit">Submit</a> <a href="#"
+				class="ui-addbutton ui-btn-footer-icon btn-icon-circle"
+				id="current-month-btn" data-rel="Back">Back</a>
+				<!-- code for check -->
+    	</div>   
+		<!-- upto here -->
+	
+   <div id="btnUpdate" class="ui-button ">
+			<div id="btnTextSubmit" class="ui-button ">Update</div>
+		</div>
+	</div>
+<!--AddRecord_End-->
+
+
+
+   <!--ListingPage_Start -->
+	<div id="pageResult" class="ui-page ui-page-active">
+		<header class="ui-header">
+			<h2 class="ui-title ">Data List</h2>
+		</header>
+		<div id="resultContents" class="contents">
+			<div id="resultDetail" class="detail"></div>
+		</div>
+
+
+		<div id="month-footer" class="ui-footer ui-grid-col-2">
+			<a href="#addrecordpage"
+				class="ui-addbutton ui-btn-footer-icon btn-icon-left"
+				id="addRecord">Add</a> <a href="#main"
+				class="ui-addbutton ui-btn-footer-icon btn-icon-circle"
+				id="current-month-btn">Menu</a>
+		</div>
+
+		<div id="2btnPopup" class="ui-popup">
+			<div class="ui-popup-content">Do you want to Delete this item.
+			</div>
+			<div class="ui-popup-footer ui-side-button ui-grid-col-2">
+				<a id="btnCancel" href="#" class="ui-btn btn-icon-cancel"
+					data-rel="back">Cancel</a> <a id="btnOK" href="#"
+					class="ui-btn btn-icon-check">OK</a>
+			</div>
+
+		</div>
+	</div>
+<!--DeltePopup_End -->
+
+<!--SectionChanger_Start -->
+	<div id="sectionChangerPage" class="ui-page"
+		data-enable-page-scroll="false">
+		<div id="sectionChanger" class="ui-content ui-section-changer">
+			<div id="scroller">
+				<section class="ui-section-active">
+					<div class="thumbnail">Hey There! Nice to see you</div>
+				</section>
+				<section>
+					<div class="thumbnail">Hey There! Agian Nice to see you</div>
+				</section>
+				<section>
+					<div class="thumbnail">GO now. You mad</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!--ListingPage_End -->
+
+<!-- Notifications Start -->
+	<div id="notification" class="ui-page">
+		<header class="ui-header">
+			<h2 class="ui-title">Manage Notification</h2>
+		</header>
+		<div data-role="content">
+			<div class="ui-content">
+				<table class="checkboxtable">
+					<tr>
+						<td><input type="checkbox" id="batterylevel" /></td>
+						<td id="td2"><span>Notify me on battery level</span></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="storagelevel" /></td>
+						<td><span>Notify me on storage level</span></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="cpuloadlevel" /></td>
+						<td><span>Notify me on cpu load </span></td>
+					</tr>
+
+				</table>
+				<br> <br>
+				<button id="getAllNotifications">See All Notifications</button>
+				<br>
+				<button id="removeAllNotifications">Remove all
+					notifications</button>
+			</div>
+		</div>
+	</div>
+	<!-- Notifications End -->
+	<!-- marquee_Start -->
+	<div class="ui-page" id="marqueeTest" data-enable-page-scroll="false">
+		<header class="ui-header">
+			<h2 class="ui-title">Marquee</h2>
+		</header>
+		<div class="ui-content">
+			<div class="ui-marquee ui-marquee-gradient"
+				style="height: 100px; line-height: 100px" id="marquee">
+				MarqueeTEST TEST message TEST for marquee</div>
+			<div
+				style="font-size: 25px; text-align: center; padding-bottom: 15px;">sub-text</div>
+		</div>
+		<footer class="ui-footer ui-grid-col-2 ui-fixed">
+			<a href="#" class="ui-btn" id="start">STOP</a> <a href="#"
+				class="ui-btn" id="reset">RESET</a>
+		</footer>
+	
+	</div>
+	<!-- Marquee_End -->
+
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="js/circle-helper.js"></script>
+	<script src="app.js"></script>
+	<script src="lowBatteryCheck.js"></script>
+	<!-- <script src="js/data.js"></script> -->
+	<!--  only dummy data -->
+	<script src="js/Data2.js"></script>
+	<!-- use this to for all funcationality with dummy data -->
+<!-- 	<script src="js/Data3.js"></script> -->
+	<!-- only user input  -->
+	<script src="js/thumbnail.js"></script>
+	<script src="js/marquee.js"></script>
+</body>
+</html>
